@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enlearn Sample - Lucas Smith</title>
+        <link href="../css/bootstrap-responsive.min.css" type="text/css" rel="stylesheet"  />
+        <link href="../css/app.css" type="text/css" rel="stylesheet"  />
+        <script type="text/javascript" src="../js/app.js"></script>
+        <script type="text/javascript">
+            //init game once DOM has loaded
+            window.onload = function(){
+                var game = new yahtzee.game();                
+            }
+        </script>
+        </head>
+    <body>
+        <div class="container">
+            <div class="row-fluid">
+                <div class="span12">
+                    <h1>Welcome to the non-Yahtzee Dice game!</h1>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <h3>Click the Roll button to start!</h3>
+                    <div id="btn-roll" class="btn"><a href="#">Roll them bones!</a></div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <h3>You rolled:</h3>
+                    <div id="roll"></div>
+                </div>
+            </div>
+            
+            <div class="row-fluid">
+                <div class="span12" id="categories">
+                    <h3>Select a catagory</h3>
+                    <div class="row-fluid">
+                        <div class="span6">
+                            <h4>Upper Deck</h4>
+                                <label for="ones">Ones</label>
+                                <input type="radio" name="categories" value="ones" id="ones" />
+                                
+                                <label for="twos">Twos</label>
+                                <input type="radio" name="categories" value="twos" id="twos" />
+                                
+                                <label for="threes">Threes</label>
+                                <input type="radio" name="categories" value="threes" id="threes" />
+                                
+                                <label for="fours">Fours</label>
+                                <input type="radio" name="categories" value="fours" id="fours" />
+                                
+                                <label for="fives">Fives</label>
+                                <input type="radio" name="categories" value="fives" id="fives" />
+                                
+                                <label for="sixes">Sixes</label>
+                                <input type="radio" name="categories" value="sixes" id="sixes" />
+            
+                                <label for="sevens">Sevens</label>
+                                <input type="radio" name="categories" value="sevens" id="sevens" />
+                                
+                                <label for="eights">Eights</label>
+                                <input type="radio" name="categories" value="eights" id="eights" />
+                        </div>
+                        <div class="span6">
+                            <h4>Lower Deck</h4>
+                                <label for="3ofa">3 of a Kind</label>
+                                <input type="radio" name="categories" value="3ofa" id="3ofa" />
+                                
+                                <label for="4ofa">4 of a Kind</label>
+                                <input type="radio" name="categories" value="4ofa" id="4ofa" />
+                                
+                                <label for="0ofa">None of a Kind</label>
+                                <input type="radio" name="categories" value="0ofa" id="0ofa" />
+                                
+                                <label for="5ofa">All 5!</label>
+                                <input type="radio" name="categories" value="5ofa" id="5ofa" />
+                                
+                                <label for="fullHouse">Full House</label>
+                                <input type="radio" name="categories" value="fullHouse" id="fullHouse" />
+                                
+                                <label for="smstr">Small Straight</label>
+                                <input type="radio" name="categories" value="smstr" id="smstr" />
+            
+                                <label for="lgstr">Large Straight</label>
+                                <input type="radio" name="categories" value="lgstr" id="lgstr" />
+                                
+                                <label for="chance">Chance</label>
+                                <input type="radio" name="categories" value="chance" id="chance" />
+                        </div>
+                    </div>
+                    <div class="row-fluid">
+                        <div class="span12">
+                                <div id="go" class="btn right"><a href="#">Get Selected Score</a></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <h3 id="score"></h3>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="suggestions" class="btn"><a href="#">Suggest Categories</a></div>
+                    <div id="categorySuggestions"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

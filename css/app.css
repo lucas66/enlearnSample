@@ -1,0 +1,52 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color:#333;
+}
+.btn{
+    background:#800000;
+    padding:10px 20px;
+    border:1px solid #333;
+    display: inline-block;
+}
+.btn:hover{
+    background:#900000;
+}
+.btn a{
+    text-decoration: none;
+    color:#fff;
+
+}
+.die{
+    width:18%;
+    margin-left:1.5%;
+    background:#fff;
+    color:#333;
+    font-size: 3em;
+    font-weight: bold;
+    float: left;;
+    text-align: center;
+    line-height: 4em;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+input{
+    margin-right:10px;
+}
+.right{
+    float: right;
+}
+.highlight{
+    background: #333;
+    color:#fff;
+    display: inline-block;
+    padding:5px 10px;
+}
+#categories, #categorySuggestions.show{
+    border:1px solid #333;
+    padding:20px;
+    margin-top:20px;
+}
+#go{
+    margin-top:20px;
+}
